@@ -223,7 +223,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Import libraries</span>
@@ -275,7 +275,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">data</span> <span class="o">=</span> <span class="n">student_data</span><span class="o">.</span><span class="n">as_matrix</span><span class="p">()</span>
@@ -306,7 +306,7 @@ div#notebook {
 <span class="k">print</span> <span class="s">&quot;Number of features: {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_features</span><span class="p">)</span>
 <span class="k">print</span> <span class="s">&quot;Number of students who passed: {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_passed</span><span class="p">)</span>
 <span class="k">print</span> <span class="s">&quot;Number of students who failed: {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_failed</span><span class="p">)</span>
-<span class="k">print</span> <span class="s">&quot;Graduation rate of the class: {:.2f}%&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">grad_rate</span><span class="p">)</span>
+<span class="k">print</span> <span class="s">&quot;Graduation rate of the class: {:.2f}%&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">grad_rate</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -323,7 +323,7 @@ div#notebook {
 Number of features: 30
 Number of students who passed: 265
 Number of students who failed: 130
-Graduation rate of the class: 0.67%
+Graduation rate of the class: 67.09%
 </pre>
 </div>
 </div>
@@ -346,7 +346,7 @@ Graduation rate of the class: 0.67%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Extract feature columns</span>
@@ -428,7 +428,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">preprocess_features</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -499,7 +499,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># TODO: Import any additional functionality you may need here</span>
@@ -622,7 +622,7 @@ model: SVM
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="k">def</span> <span class="nf">train_classifier</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
@@ -695,7 +695,7 @@ model: SVM
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># TODO: Import the three supervised learning models from sklearn</span>
@@ -745,60 +745,60 @@ model: SVM
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training a SVC using a training set size of 100. . .
-Trained model in 0.0020 seconds
-Made predictions in 0.0017 seconds.
+Trained model in 0.0076 seconds
+Made predictions in 0.0024 seconds.
 F1 score for training set: 0.8591.
 Made predictions in 0.0015 seconds.
 F1 score for test set: 0.7838.
 Training a SVC using a training set size of 200. . .
-Trained model in 0.0055 seconds
-Made predictions in 0.0041 seconds.
+Trained model in 0.0053 seconds
+Made predictions in 0.0032 seconds.
 F1 score for training set: 0.8693.
-Made predictions in 0.0021 seconds.
+Made predictions in 0.0020 seconds.
 F1 score for test set: 0.7755.
 Training a SVC using a training set size of 300. . .
-Trained model in 0.0367 seconds
-Made predictions in 0.0121 seconds.
+Trained model in 0.0090 seconds
+Made predictions in 0.0056 seconds.
 F1 score for training set: 0.8692.
-Made predictions in 0.0027 seconds.
+Made predictions in 0.0023 seconds.
 F1 score for test set: 0.7586.
 -------------------------------
 Training a GradientBoostingClassifier using a training set size of 100. . .
-Trained model in 0.0846 seconds
-Made predictions in 0.0007 seconds.
+Trained model in 0.0765 seconds
+Made predictions in 0.0021 seconds.
 F1 score for training set: 1.0000.
 Made predictions in 0.0006 seconds.
 F1 score for test set: 0.7612.
 Training a GradientBoostingClassifier using a training set size of 200. . .
-Trained model in 0.1183 seconds
-Made predictions in 0.0011 seconds.
+Trained model in 0.1070 seconds
+Made predictions in 0.0010 seconds.
 F1 score for training set: 0.9852.
 Made predictions in 0.0006 seconds.
 F1 score for test set: 0.7820.
 Training a GradientBoostingClassifier using a training set size of 300. . .
-Trained model in 0.1361 seconds
-Made predictions in 0.0016 seconds.
+Trained model in 0.1392 seconds
+Made predictions in 0.0013 seconds.
 F1 score for training set: 0.9740.
 Made predictions in 0.0006 seconds.
 F1 score for test set: 0.7727.
 -------------------------------
 Training a RandomForestClassifier using a training set size of 100. . .
-Trained model in 0.0252 seconds
-Made predictions in 0.0012 seconds.
+Trained model in 0.0349 seconds
+Made predictions in 0.0020 seconds.
 F1 score for training set: 0.9841.
-Made predictions in 0.0010 seconds.
+Made predictions in 0.0014 seconds.
 F1 score for test set: 0.7119.
 Training a RandomForestClassifier using a training set size of 200. . .
-Trained model in 0.0269 seconds
-Made predictions in 0.0027 seconds.
+Trained model in 0.0225 seconds
+Made predictions in 0.0021 seconds.
 F1 score for training set: 1.0000.
-Made predictions in 0.0017 seconds.
+Made predictions in 0.0012 seconds.
 F1 score for test set: 0.7761.
 Training a RandomForestClassifier using a training set size of 300. . .
-Trained model in 0.0313 seconds
-Made predictions in 0.0017 seconds.
-F1 score for training set: 0.9976.
+Trained model in 0.0316 seconds
 Made predictions in 0.0015 seconds.
+F1 score for training set: 0.9976.
+Made predictions in 0.0010 seconds.
 F1 score for test set: 0.7344.
 </pre>
 </div>
@@ -974,7 +974,10 @@ F1 score for test set: 0.7344.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> Support Vector Machines are based on the conception of making decision planes that define decision boundaries. A decision plane is one that separates between a set of objects having different class memberships. SVM rearrange data so that it can draw decison boundaries(decison planes).  Based on these boundaries, SVM classify two labels.</p>
+<p><strong>Answer: </strong>
+The SVM takes data about previous students (age, gender, family, etc), and uses them to create a function that draws a boundary between the students who passed and those who didn't. The boundary should be drawn so as to maximize the　distance between the two different values.</p>
+<p>Often, though, it's not easy to draw a decision boundary in low dimensions, so the SVM separates the passing and failing students by rearranging the data so that it could draw decision boundary.</p>
+<p>Using this function created with students we already know passed or not, the SVM can look at new students' data and predict what kind of students are likely to graduate or not.</p>
 
 </div>
 </div>
@@ -1005,7 +1008,7 @@ F1 score for test set: 0.7344.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># TODO: Import &#39;GridSearchCV&#39; and &#39;make_scorer&#39;</span>
@@ -1018,10 +1021,10 @@ F1 score for test set: 0.7344.
 <span class="n">clf</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">()</span>
 
 <span class="c"># TODO: Make an f1 scoring function using &#39;make_scorer&#39; </span>
-<span class="n">f1_scorer</span> <span class="o">=</span> <span class="n">make_scorer</span><span class="p">(</span><span class="n">f1_score</span><span class="p">)</span>
+<span class="n">f1_scorer</span> <span class="o">=</span> <span class="n">make_scorer</span><span class="p">(</span><span class="n">f1_score</span><span class="p">,</span> <span class="n">pos_label</span> <span class="o">=</span> <span class="s">&#39;yes&#39;</span><span class="p">)</span>
 
 <span class="c"># TODO: Perform grid search on the classifier using the f1_scorer as the scoring method</span>
-<span class="n">grid_obj</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">GridSearchCV</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">parameters</span><span class="p">)</span>
+<span class="n">grid_obj</span> <span class="o">=</span> <span class="n">grid_search</span><span class="o">.</span><span class="n">GridSearchCV</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">parameters</span><span class="p">,</span> <span class="n">scoring</span> <span class="o">=</span> <span class="n">f1_scorer</span><span class="p">)</span>
 
 <span class="c"># TODO: Fit the grid search object to the training data and find the optimal parameters</span>
 <span class="n">grid_obj</span> <span class="o">=</span> <span class="n">grid_obj</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
@@ -1046,7 +1049,7 @@ F1 score for test set: 0.7344.
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Made predictions in 0.0054 seconds.
 Tuned model has a training F1 score of 0.8692.
-Made predictions in 0.0019 seconds.
+Made predictions in 0.0018 seconds.
 Tuned model has a testing F1 score of 0.7586.
 </pre>
 </div>
